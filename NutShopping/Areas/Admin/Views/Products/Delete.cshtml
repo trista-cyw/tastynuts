@@ -1,0 +1,248 @@
+﻿@model NutShopping.Models.Product
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.productName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productSummary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productSummary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productOriPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productOriPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productSpePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productSpePrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productIsLaunched)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productIsLaunched)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productClass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productClass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productServing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productServing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productIncluding)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productIncluding)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productSCalories)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productSCalories)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productGCalories)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productGCalories)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productSProtein)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productSProtein)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productGProtein)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productGProtein)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productSFat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productSFat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productGFat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productGFat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productSSaturatedFat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productSSaturatedFat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productGSaturatedFat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productGSaturatedFat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productSTransFat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productSTransFat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productGTransFat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productGTransFat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productSCarbohydrate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productSCarbohydrate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productGCarbohydrate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productGCarbohydrate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productSSugar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productSSugar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productGSugar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productGSugar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productSNa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productSNa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productGNa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productGNa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productImgCover)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productImgCover)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

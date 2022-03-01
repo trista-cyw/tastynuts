@@ -1,0 +1,195 @@
+﻿@model IEnumerable<NutShopping.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.productName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productSummary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productOriPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productSpePrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productIsLaunched)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productClass)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productServing)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productIncluding)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productSCalories)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productGCalories)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productSProtein)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productGProtein)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productSFat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productGFat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productSSaturatedFat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productGSaturatedFat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productSTransFat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productGTransFat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productSCarbohydrate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productGCarbohydrate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productSSugar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productGSugar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productSNa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productGNa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productImgCover)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.productName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productSummary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productOriPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productSpePrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productIsLaunched)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productClass)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productServing)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productIncluding)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productSCalories)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productGCalories)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productSProtein)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productGProtein)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productSFat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productGFat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productSSaturatedFat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productGSaturatedFat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productSTransFat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productGTransFat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productSCarbohydrate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productGCarbohydrate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productSSugar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productGSugar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productSNa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productGNa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productImgCover)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
